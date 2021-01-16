@@ -28,6 +28,9 @@ body {
 		rgba(253, 242, 45, 0.7861519607843137) 100%
 	);
 }
+h2{
+	margin: auto;
+}
 
 #c1 {
 	top: 60px;
@@ -55,6 +58,11 @@ body {
 	backdrop-filter: blur(7.5px);
 	-webkit-backdrop-filter: blur(7.5px);
 	border-radius: 10px;
+	width: 400px;
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .result-container {
@@ -99,6 +107,7 @@ body {
 .btn-large {
 	display: block;
 	width: 100%;
+	margin: auto;
 }
 
 .setting {
@@ -108,3 +117,12 @@ body {
 	margin: 15px 0;
 }
 
+input {
+	padding: 5px;
+	border-radius: 4px;
+	border: none;
+}
+
+label {
+	font-size: 18px;
+}
