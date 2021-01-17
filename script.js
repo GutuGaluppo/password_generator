@@ -55,7 +55,14 @@ function generatePassword(lower, upper, number, symbol, length) {
 		})
 	}
 
-	const finalPassword = generatedPassword.slice(0, length)
+	const shuffledChars = generatedPassword
+		.slice(0, length)
+		.split('')
+		.sort(function () { return 0.5 - Math.random() })
+		.join('');
+
+	const finalPassword = shuffledChars
+
 	return finalPassword
 
 }
